@@ -1,0 +1,341 @@
+/* COLORS and variables used */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+ --main-green: rgb(232, 232, 95);
+ --dark-green: #808000;
+ --dark-gray: #333;
+}
+
+
+body {
+    background: var(--dark-gray);
+    width: 100%;
+    height: 3000px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Raleway;
+    background-color: var(--dark-gray);
+    width: 100vw;
+    height: 100vh;
+}
+
+.bmi-title {
+    color: white;
+}
+
+.two-main-columns {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    border: none;
+}
+
+/* FIRST COLUMN for metric measurements */
+
+
+.main-metric-container {
+    border: 4px solid white;
+    background-color: var(--main-green);
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    padding-left: 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metric-label {
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.data-type-in-container-m {
+    border: 1px solid #222;
+    border: none;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.height-input-cm {
+    margin: 10px;
+}
+
+.height-input-cm:focus {
+    outline: none;
+}
+
+.weight-input-kg {
+    margin: 10px;
+}
+
+
+.weight-input-kg:focus {
+    outline: none;
+}
+
+
+/* Calculate button Metric */
+.bmi-btn-m {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.bmi-btn-m:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+
+/* Clear the data button */
+.clear-m {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.clear-m:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+/* BMI result */
+
+.bmi-data-m {
+    display: flex;
+
+}
+
+.bmi-label-m {
+    margin: 10px;
+}
+
+.bmi-result-m {
+    margin: 2px;
+    border: 1px solid #222;
+    border: none;
+    padding: 8px;
+    background-color: white;
+    width: 100px;
+}
+
+.bmi-result-m:hover {
+
+    color: #222;
+    cursor: pointer;
+}
+
+/* BMI Categories note */
+
+
+
+.bmi-categories-box {
+    border: 2px solid var(--dark-green);
+    border: 2px solid white;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.main-note {
+    font-size: 14px;
+    color: #222;
+}
+
+.note {
+    font-size: 12px;
+    color: #222;
+}
+
+
+/* SECOND COLUMN for imperial measurements */
+
+.main-imperial-container {
+    border: 4px solid white;
+    background-color: var(--main-green);
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    padding-left: 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.imperial-label {
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.data-type-in-container-us {
+    border: 1px solid #222;
+    border: none;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ft-in {
+    display: flex;
+    flex-direction: row;
+}
+
+.height-input-ft {
+    margin: 0;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.height-input-ft:focus {
+    outline: none;
+}
+
+.height-input-in {
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.height-input-in:focus {
+    outline: none;
+}
+
+
+.weight-input-lb {
+    margin: 10px;
+}
+
+
+.weight-input-lb:focus {
+    outline: none;
+}
+
+
+/* Calculation button Imperial */
+
+.bmi-btn-us {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.bmi-btn-us:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+/* Clear the data button */
+.clear-us {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.clear-us:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+/* BMI result */
+
+.bmi-data-us {
+    display: flex;
+}
+
+.bmi-label-us {
+    margin: 10px;
+}
+
+.bmi-result-us {
+    margin: 2px;
+    border: 1px solid #222;
+    border: none;
+    padding: 8px;
+    width: 100px;
+    background-color: white;
+}
+
+.bmi-result-us:hover {
+    color: #222;
+    cursor: pointer;
+}
+
+/* Notepad */
+.notepad {
+    width: 180px;
+    height: 130px;
+    background-color: var(--main-green);
+    margin-top: 10px;
+    border: 2px solid var(--dark-green);
+    padding: 10px;
+}
+
+.notepad:focus {
+    outline: none;
+}
+
+/* Scratch paper */
+
+
+@media screen and (max-width: 800px) {
+    
+    .two-main-columns {
+        display: flex;
+        flex-direction: column;
+    }
+  }

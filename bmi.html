@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bmi.css">
+    <script src="/bmi-m.js" defer></script>
+    <script src="/bmi-us.js" defer></script>
+    <script src="/bmi.js" defer></script>
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <!-- I started coding this project at about 9:13pm 9:13pm on Mon Jan 15, 2024. -->
+    <div class="content-box">
+        <p class="bmi-title">Body Mass Index Calculator 2024</p>
+
+        <div class="two-main-columns">
+            <div class="main-metric-container">
+                <div class="metric-label">METRIC</div>
+                <div class="data-type-in-container-m">
+
+
+                    <label class="height-label">Height </label>
+                    <input type="text" class="height-input-cm" placeholder="centimeters">
+
+                    <label class="weight-label">Weight</label>
+                    <input type="text" class="weight-input-kg" placeholder="kilograms">
+
+
+
+                    <button class="bmi-btn-m">Calculate BMI</button>
+                    <br>
+                    <div class="bmi-data-m">
+                        <div class="bmi-label-m">BMI = </div>
+                        <div class="bmi-result-m"></div>
+                    </div>
+                </div>
+                <!-- BMI categories -->
+                <div class="bmi-description">
+
+
+
+                    <div class="bmi-categories-box">
+                        <p class="main-note">BMI Categories</p>
+                        <p class="note">Underweight = < 18.5 </p>
+                                <p class="note">Normal weight = 18.5 - 24.9</p>
+                                <p class="note">Overweight = 25 - 29.9</p>
+                                <p class="note">Obesity = BMI of 30 or greater</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- SECOND COLUMN for imperial measurements -->
+            <div class="main-imperial-container">
+                <div class="imperial-label">IMPERIAL</div>
+
+                <div class="data-type-in-container-us">
+
+
+                    <label class="height-label">Height</label>
+
+                    <div class="ft-in">
+                        <div class="height-box-us">
+                            <input type="text" class="height-input-ft" placeholder="feet">
+                        </div>
+                        <div class="weight-box-us">
+                            <input type="text" class="height-input-in" placeholder="inches">
+                        </div>
+                    </div>
+                    <br>
+                    <label class="weight-label">Weight</label>
+                    <input type="text" class="weight-input-lb" placeholder="pounds">
+
+
+
+                    <button class="bmi-btn-us">Calculate BMI</button>
+
+                    <br>
+                    <div class="bmi-data-us">
+                        <div class="bmi-label-us">BMI = </div>
+                        <div class="bmi-result-us"></div>
+                    </div>
+                </div>
+
+
+                <button class="clear-m">Clear</button>
+                <!-- Notepad -->
+
+            </div>
+
+        </div>
+
+
+        <!-- Scratch paper -->
+    </div>
+
+
+
+</body>
+
+</html>
